@@ -1,0 +1,123 @@
+ 
+<html>
+    <head>
+      <title>Hand Gesture</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+  
+      <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+  
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+  
+    <body>
+    <div class="container">
+    
+      <center>
+  
+        <h3 id="app" class="btn btn-warning heading">
+ Hand Gesture App
+ <br>
+ <span>
+  &#x1F91E;
+  
+ </span>
+
+ <span>
+  &#x270B;
+  
+ </span>
+
+ <span>
+  &#128076;
+  
+ </span>
+ <span>
+  &#x1F44F;
+  
+ </span>
+ <span>
+  &#x1F44B;
+  
+ </span>
+ <span>
+  &#128077; 
+  
+ </span>
+
+ <span>
+  &#x270C;
+ </span>
+        </h3>
+        <br>
+        
+  
+       
+          
+        <br><br>
+  
+        <p style="font-size: 22px; color: white; font-family:Luminari;">Take a picture of the Hand Gesture
+            <br>
+          
+          <b> This model recognizes the following gestures: </b>
+          
+          <br>
+          
+<br>
+          
+          <label id="gesture">
+          <span> &#128076;</span>
+           <span>&#x270C;</span>	
+          <span>&#128077; </span>
+          </label>
+          
+        
+        </p>
+  
+              <div class = "col-md-4 col-sm-12 col-xs-12">
+                <label>
+                Webcam View
+               </label>
+               <div id="camera"></div>
+  
+               <br>
+               <br>
+  
+               <button id="capture" class="btn btn-warning" onclick="take_snapshot()">
+               Capture Image
+               </button>
+              </div>
+  
+              <div class="col-md-4 col-sm-12 col-xs-12">
+                <label> Prediction 1- </label>
+                <p class="gesture_name" id="result_gesture_name">    </p>
+                <p class="emoji" id="update_gesture">    </p>
+                <label> Prediction 2- </label>
+                <p class="gesture_name" id="result_gesture_name_2">    </p>
+                <p class="emoji" id="update_gesture_2">    </p>
+              </div>
+  
+  
+        <div class="col-md-4 col-sm-12 col-xs-12">
+            <label>Snapshot</label>
+            <div id="result"></div>
+          <br><br>
+          <button id="check" class="btn btn-warning" onclick="check()">
+            Check Gesture
+            </button>
+  
+        </div>
+  
+      </center>
+  
+    </div>
+  
+  <script src="main.js"></script>
+  
+    </body>
+  </html>
+  
+   

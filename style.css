@@ -1,0 +1,58 @@
+body
+{
+  color: white;
+  background-color:rgb(133, 195, 216) ;
+}
+span
+{
+  font-size: 30px;
+  font-family: Luminari;
+}
+#camera , #result , #picture
+{
+  border: 2px dashed black;
+  width: 350px;
+  height: 300px; 
+}
+#result_gesture_name ,#result_gesture_name2  
+{
+  color: black;
+  font-family: Luminari;
+}
+.emotion_name
+{
+  font-size: 40px;
+  
+}
+.emoji
+{
+  font-size:48px;
+}
+
+.heading {
+  font-size:18px;
+  border-radius: 10px;
+  letter-spacing: 5px;
+}
+label {
+ font-size:14px;
+color:lightseagreen;
+padding:6px;
+border-radius: 10px;
+background-color: white;
+font-family: Luminari;
+}
+#check , #capture{
+    background-color:lightseagreen;
+    border-color: lightseagreen;
+    font-family: Luminari;
+    border-color:white;
+}
+ 
+
+ #app {
+    font-family: Luminari;
+    background-color:lightblue;
+    border-color:white;
+ }
+
